@@ -1,1 +1,1 @@
-# Aimastergo.github.io
+# A+ 받아가겠습니다
