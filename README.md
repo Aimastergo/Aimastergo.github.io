@@ -44,8 +44,8 @@
 
 - 기존의 객체 탐지(Object Detection) 방식들은 Region Proposal과 Classification이 순차적으로 이루어지며 객체 탐지를 수행하는 R-CNN 계열 2 Step 접근 방식 모델들이 주를 이루었다.(ex. R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN 등)
 - 하지만 이러한 방식들은 처리 속도가 느리고, 최적화하기 힘들다는 단점이 있다.
-- 2015년 일정 수준의 정확성을 보이면서 처리 속도가 보완된 모델인 YOLO 공개.
-- YOLO는 Region Proposal과 Classification이 동시에 이루어지며 객체 탐지를 수행하는 모델로, 
+- 2015년 일정 수준의 정확성을 보이면서 처리 속도가 보완된 모델인 YOLO가 공개되었다.
+- YOLO는 Region Proposal과 Classification이 동시에 이루어지며 객체 탐지를 수행하는 모델로, 처리 속도가 매우 빠르고 간단하다.
 
 
 ### 1. YOLO(You Only Look Once)
