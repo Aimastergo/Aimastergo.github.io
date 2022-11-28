@@ -56,9 +56,9 @@
 #### 1) Unified Detection
 - 입력 이미지를 S x S grid로 나눠준다.
 - Grid cell은 B bounding boxes 와 confidence score를 예측한다.
-- bounding box는 (x, y, w, h, c)로 구성되어 있음.
->- (x,y) : boundging box의 중심점 좌표. w,h : 넓이와 높이. c : Confidence
-- Confidence는 bounding box의 신뢰도를 나타낸다. Pr(Object) ∗ IOUtruth
+- bounding box는 (x, y, w, h)로 구성되어 있음.
+>- (x,y) : boundging box의 중심점 좌표. w,h : 넓이와 높이.
+- Confidence는 bounding box의 신뢰도를 나타낸다. 
 <img width="180" alt="스크린샷 2022-11-29 오전 4 19 54" src="https://user-images.githubusercontent.com/117564613/204362614-6539818f-bde5-4fba-98fc-218dbb487ecf.png">
 
 
