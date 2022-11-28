@@ -73,7 +73,7 @@
 <img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png"> [1]
 
 #### 2) Network Design
-<img width="1221" alt="스크린샷 2022-11-29 오전 2 52 32" src="https://user-images.githubusercontent.com/117564613/204372953-c6181b60-3ba4-4844-9049-d74a48c829bf.png">
+<img width="1000" alt="스크린샷 2022-11-29 오전 2 52 32" src="https://user-images.githubusercontent.com/117564613/204372953-c6181b60-3ba4-4844-9049-d74a48c829bf.png"> [1]
 
 
 ### 2. YOLOv5
