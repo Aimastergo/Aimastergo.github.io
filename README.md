@@ -53,6 +53,7 @@
 
 <img width="585" alt="스크린샷 2022-11-29 오전 2 51 59" src="https://user-images.githubusercontent.com/117564613/204346930-8a9434c9-f5e4-468e-89cd-dc8c3e6e2a78.png"> [1]
 
+#### 1) Unified Detection
 - 입력 이미지를 S x S grid로 나눠준다.
 - Grid cell은 B bounding boxes 와 confidence score를 예측한다.
 - bounding box는 (x, y, w, h)로 구성되어 있음.
