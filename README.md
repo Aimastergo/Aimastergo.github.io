@@ -40,7 +40,7 @@
 >- test : 450 (each label 150)   
 
 <br><br>
-## III. Proposal
+## III. Methology
 
 
 <br/><br/>
