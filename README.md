@@ -29,7 +29,7 @@
 
 ### 2. 데이터 라벨링
 - **labelimg**를 사용하여 train, valid 데이터 라벨링
-![첨부1](https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg)
+![첨부1](https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg){: width="100" height="100")
 
 
 ## III. Proposal
