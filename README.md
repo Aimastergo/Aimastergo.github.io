@@ -56,9 +56,9 @@
 #### 1) Unified Detection
 - 입력 이미지를 S x S grid로 나눠준다.
 - Grid cell은 B bounding boxes 와 confidence score를 예측한다.
-- bounding box는 (x, y, w, h, c)로 구성되어 있음.
- >- (x,y) : boundging box의 중심점 좌표. 
- >- w,h : 넓이와 높이. 
+- bounding box는 (x, y, w, h, c)로 구성되어 있다
+ >- (x,y) : boundging box의 중심점 좌표
+ >- w,h : 넓이와 높이
  >- c : confidence
 - Confidence는 bounding box의 신뢰도를 나타내며 아래 사진과 같이 정의된다.
 
@@ -72,12 +72,20 @@
 - 아래의 식과 같이 S x S X (B * 5 + C)개의 tensor가 인코딩된다.
 <img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png"> [1]
 
-#### 2) Network Design
-<img width="850" alt="스크린샷 2022-11-29 오전 2 52 32" src="https://user-images.githubusercontent.com/117564613/204372953-c6181b60-3ba4-4844-9049-d74a48c829bf.png"> [1]
+- 인코딩 된 결과는 다음과 같다.
 
+  ![1*YG6heD55fEmZeUKRSlsqlA](https://user-images.githubusercontent.com/117564613/204378112-174995a5-dbea-4aff-8cf2-a1471965fc8e.png) [3]
+
+
+#### 2) Network Design
+<img width="800" alt="스크린샷 2022-11-29 오전 2 52 32" src="https://user-images.githubusercontent.com/117564613/204372953-c6181b60-3ba4-4844-9049-d74a48c829bf.png"> [1]
+
+- YOLOv1의 네트워크 구조는 총 24개의 convolutional layers가 있고, 2개의 fully connected layers로 이루어져 있다.
+- convolutional layer 20개는 ImageNet 1000-class competition dataset을 사용하여 convolutional layers를 pre-train 시켰다.
+- 해상도를 위해 224x224 크기의 input 이미지를 2배하여 448x448로 변경하였다.
 
 ### 2. YOLOv5
-
+- 지금까지 YOLO의 초기 버전인 YOLOv1을 간단히 살펴보았고, 이제는 우리가 적용할 기법인 YOLOv5에 대해 알아보고자 한다.
 <br><br>
 ## IV. Evaluation & Analysis
 
@@ -86,6 +94,8 @@
 [1] You Only Look Once: Unified, Real-Time Object Detection - https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
 
 [2] Yolo: You Only Look Once - https://infrequent-crime-dfa.notion.site/Yolo-You-Only-Look-Once-ee0370b7eec942bf8279dd54952e4efb
+
+[3] Review: YOLOv1 — You Only Look Once (Object Detection) - https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
 <br/><br/>
  *ref)*
  *국내 소주 판매순위 Top 10 https://smoothmen.tistory.com/300*
