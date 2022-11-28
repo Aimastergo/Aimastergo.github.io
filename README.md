@@ -69,7 +69,7 @@
 
   <img width="155" alt="스크린샷 2022-11-29 오전 5 00 33" src="https://user-images.githubusercontent.com/117564613/204369708-93137915-7e53-47a0-9bf2-1d12fe517072.png"> [1]
   
-- 아래의 식과 같이 S x S X (B * 5 + C)개의 tensor가 인코딩된다.
+- 최종 출력은 아래의 식과 같이 S x S X (B * 5 + C)개의 예측 tensor가 나온다.
 <img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png"> [1]
 
 - 인코딩 된 결과는 다음과 같다.
@@ -87,7 +87,10 @@
 
 ### 2. YOLOv5
 - 지금까지 YOLO의 초기 버전인 YOLOv1을 간단히 살펴보았고, 이제는 우리가 적용할 기법인 YOLOv5에 대해 알아보고자 한다.
-- YOLOv5는 Pytorch 프레임워크 기반으로 구현된 버전으로 YOLOv4와 구조는 유사하나 CSP(Cross Stage Partial Network)를 사용함으로 계산 비용이 줄어들어 추론 시간이 YOLOv4보다 더욱 적게 소요되어 실시간 검출에 더 적합하다.
+- YOLOv5는 Pytorch 프레임워크 기반으로 구현된 버전으로 YOLOv4와 구조는 유사하나 CSP(Cross Stage Partial Network)를 사용함으로 계산 비용이 줄어들어 추론 시간이 YOLOv4보다 더욱 적게 소요되어 실시간 검출에 더 적합하다. [4]
+
+<img width="798" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [5]
+
 <br><br>
 ## IV. Evaluation & Analysis
 
@@ -98,6 +101,11 @@
 [2] Yolo: You Only Look Once - https://infrequent-crime-dfa.notion.site/Yolo-You-Only-Look-Once-ee0370b7eec942bf8279dd54952e4efb
 
 [3] Review: YOLOv1 — You Only Look Once (Object Detection) - https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
+
+[4] YOLOv5를 이용한 해양 침적쓰레기 검출 A.I 모델에 대한 연구 - 왕태수(동의대학교)
+
+[5] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
+
 <br/><br/>
  *ref)*
  *국내 소주 판매순위 Top 10 https://smoothmen.tistory.com/300*
