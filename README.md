@@ -24,13 +24,19 @@
 
 **2) 데이터 수집 : 검색포털 이미지 크롤링**
 - 네이버, 구글, bing 3개 검색포털로 부터 이미지 크롤링 * crawling_n.py 파일 참조
-- 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 2,400여 개 수기 추출
+- 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 1,800여 개 수기 추출
 <br/><br/>
 
 ### 2. 데이터 라벨링
 - **labelimg**를 사용하여 train, valid 데이터 라벨링
-![첨부1](https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg){: width="100" height="100")
-<img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg.png" width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="560" height="350"/>
+
+### 3.Datasets
+- label classess : 3
+- total : 1,800 (each label 300)
+>- train : 900 (each label 300)
+>- valid : 450 (each label 150)
+>- test : 450 (each label 150)
 
 ## III. Proposal
 
