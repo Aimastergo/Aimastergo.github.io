@@ -1,12 +1,12 @@
 # AI+X:DeepLearning Final Project<br/>
-<br/><br/>
+<br><br>
 
 ## Title
 - 국내 표준 소주병 규격에 따른 소주병 분류 (형태, 색)
-<br/><br/>
+<br/><br>
 
 ## Members
-- **전인화** 경영학부 / 2017003290 / ai05024@naver.com
+- **전인화** 경영학부 / 2017003290 / ai05024@hanyang.ac.kr
 - **백승주** 경영학부 / 2018027283 / baeksj55@hanyang.ac.kr
 <br/><br/>
 
@@ -24,25 +24,22 @@
 <br/><br/>
 
 **2) 데이터 수집 : 검색포털 이미지 크롤링**
-- 네이버, 구글, bing 3개 검색포털로 부터 이미지 크롤링 * crawling_n.py 파일 참조
+- 네이버, 구글, bing 3개 검색포털로 부터 이미지 크롤링 * *crawling_n.py 파일 참조*
 - 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 1,800여 개 수기 추출
-<img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="560" height="350"/>
-<br/><br/>
+<img src="https://user-images.githubusercontent.com/117564613/204191315-013382c4-9ec4-48f3-9793-6bedc74a4431.jpg" width="400" height="250"/>
 
 ### 2. 데이터 라벨링
 - **labelimg**를 사용하여 train, valid 데이터 라벨링
-<img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="560" height="350"/>
-<br/><br/>
+<img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="400" height="250"/>
 
 ### 3.Datasets
 - label classess : 3
 - total : 1,800 (each label 300)
 >- train : 900 (each label 300)
 >- valid : 450 (each label 150)
->- test : 450 (each label 150)
-<br/><br/>
-<br/><br/>
+>- test : 450 (each label 150)   
 
+<br><br>
 ## III. Proposal
 
 
