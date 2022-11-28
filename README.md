@@ -46,9 +46,9 @@
 - 하지만 이러한 방식들은 처리 속도가 느리고, 최적화하기 힘들다는 단점이 있다.
 
 ### 1. YOLO(You Only Look Once)
-<img width="585" alt="스크린샷 2022-11-29 오전 2 51 59" src="https://user-images.githubusercontent.com/117564613/204346930-8a9434c9-f5e4-468e-89cd-dc8c3e6e2a78.png">[1]
+<img width="585" alt="스크린샷 2022-11-29 오전 2 51 59" src="https://user-images.githubusercontent.com/117564613/204346930-8a9434c9-f5e4-468e-89cd-dc8c3e6e2a78.png"> [1]
 
-<img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png">[1]
+<img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png"> [1]
 
 ### 2. YOLOv5
 
