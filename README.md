@@ -27,9 +27,14 @@
 - 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 2,400여 개 수기 추출
 <br/><br/>
 
+### 2. 데이터 라벨링
+- **labelimg**를 사용하여 train, valid 데이터 라벨링
+- 
+
+## III. Proposal
+
+
+<br/><br/>
  *ref)*
  *국내 소주 판매순위 Top 10 https://smoothmen.tistory.com/300*
 <br/><br/>
-### 2. 데이터 라벨링
-
-## III. Proposal
