@@ -59,8 +59,11 @@
 - bounding box는 (x, y, w, h, c)로 구성되어 있음.
 >- (x,y) : boundging box의 중심점 좌표. w,h : 넓이와 높이. c : Confidence
 - Confidence는 bounding box의 신뢰도를 나타낸다. Pr(Object) ∗ IOUtruth
+<img width="180" alt="스크린샷 2022-11-29 오전 4 19 54" src="https://user-images.githubusercontent.com/117564613/204362614-6539818f-bde5-4fba-98fc-218dbb487ecf.png">
+
 
 <img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png"> [1]
+
 
 ### 2. YOLOv5
 
