@@ -119,9 +119,11 @@ driver.close()
 os.chdir('C:/Users/------') # 경로 원상 복귀
 
 
-
-
-
+'''
+[reference]
+1. soup to xpath 함수 : https://gist.github.com/ergoithz/6cf043e3fdedd1b94fcf
+2. 그 외 code : written by JIH
+'''
 
 
 
