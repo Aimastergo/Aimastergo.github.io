@@ -91,6 +91,7 @@
 
 #### 1) Network Design
 <img width="671" alt="스크린샷 2022-11-29 오전 7 22 48" src="https://user-images.githubusercontent.com/117564613/204393468-20550c40-1944-4f39-a41e-502e70ca65a0.png">
+
 - YOLOv5의 Network Design은 Backbone, neck, Head 이렇게 세 가지 주요 파트로 이루어져 있다.
 - Backbone
   - Backbone network는 multiple convolution과 pooling을 통해 입력 이미지에서 다양한 크기의 feature map을 추출하는 convolutional neural network이다. [5]
