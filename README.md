@@ -45,6 +45,7 @@
 - 기존의 객체 탐지(Object Detection) 방식들은 Region Proposal과 Classification이 순차적으로 이루어지며 객체 탐지를 수행하는 R-CNN 계열 2 Step 접근 방식 모델들이 주를 이루었다. 
 - 하지만 이러한 방식들은 처리 속도가 느리고, 최적화하기도 힘들다는 단점이 있다.
 
+### 1. YOLOv5(You Only Look Once)
 
 <br/><br/>
  *ref)*
