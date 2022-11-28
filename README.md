@@ -14,6 +14,7 @@
 - 진로 등 360mL·초록색이라는 소주병 공용 기준을 깬 상품들이 잇따라 출시되면서 소주병 재사용을 위한 협약이 사실상 유명무실화되면서 환경에 악영향을 줄 것이라는 우려도 대두된다.
 - 기업의 공병 재사용 효율을 높이고, 환경보호에 도움이 되고자 360ml 소주병을 규격과 색에 따라 분리하는 모델을 만들고자 한다.
 <br/><br/>
+<br/><br/>
 
 ## II. Datasets
 ### 1. 데이터 선정 및 수집
@@ -25,11 +26,13 @@
 **2) 데이터 수집 : 검색포털 이미지 크롤링**
 - 네이버, 구글, bing 3개 검색포털로 부터 이미지 크롤링 * crawling_n.py 파일 참조
 - 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 1,800여 개 수기 추출
+<img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="560" height="350"/>
 <br/><br/>
 
 ### 2. 데이터 라벨링
 - **labelimg**를 사용하여 train, valid 데이터 라벨링
 <img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="560" height="350"/>
+<br/><br/>
 
 ### 3.Datasets
 - label classess : 3
@@ -37,6 +40,8 @@
 >- train : 900 (each label 300)
 >- valid : 450 (each label 150)
 >- test : 450 (each label 150)
+<br/><br/>
+<br/><br/>
 
 ## III. Proposal
 
