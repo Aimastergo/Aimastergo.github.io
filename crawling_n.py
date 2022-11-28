@@ -4,6 +4,7 @@ Created on Mon Nov 14 00:34:53 2022
 
 @author: JIH
 """
+## 코드 설명 : 네이버 이미지 웹 크롤링
 
 import requests
 from selenium import webdriver
