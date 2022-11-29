@@ -110,19 +110,22 @@
 
 - YOLO의 Loss function은 3가지가 있다. Loss function들을 구한 뒤 각각 가중치를 곱해서 더한다.
 
-     <img width="255" alt="스크린샷 2022-11-29 오전 10 18 34" src="https://user-images.githubusercontent.com/117564613/204414780-ee2343ef-6378-4d87-9ee6-8eef2c2051ed.png"> [6]
+     <img width="360" alt="스크린샷 2022-11-29 오전 10 18 34" src="https://user-images.githubusercontent.com/117564613/204414780-ee2343ef-6378-4d87-9ee6-8eef2c2051ed.png"> [6]
 
   - Classes Loss : Class를 잘 찾기 위한 Loss
   - Objectness Loss : 해당 grid 안에 목표물이 있을 지에 대한 Loss
   - Location Loss : (x,y,w,h)를 찾기 위한 Regression Loss
   
-- Classes Loss와 Objectness Loss는 Binary Cross Entropy + Sigmoid layer인 'torch.nn.BCEWithLogitsLoss()'를 사용한다. 이것은 모든 class의 합을 1로 만들어 가장 값이 높은 하나의 class가 결과로 나오는 것이 아니라 일정 임계점 이상이 되면 두 개 이상의 class도 결과가 될 수 있는 Loss이다. [7]
-- Location Loss는 CIoU Loss를 사용한다. CIoU는 
+- Classes Loss와 Objectness Loss는 Binary Cross Entropy + Sigmoid layer인 'torch.nn.BCEWithLogitsLoss()'를 사용한다. 이것은 모든 class의 합을 1로 만들어 가장 값이 높은 하나의 class가 결과로 나오는 것이 아니라 일정 임계점 이상이 되면 두 개 이상의 class도 결과가 될 수 있는 Loss function이다. [7]
+- Location Loss는  IoU 기반인 CIoU Loss를 사용한다. CIoU는 area of overap과 central point distance, 그리고 종횡비(aspect ratio)를 고려한 Loss function이다. [8]
+
+  <img width="627" alt="스크린샷 2022-11-29 오전 10 53 58" src="https://user-images.githubusercontent.com/117564613/204419108-0fba6f61-38b4-4b61-9fe1-91a9412b50dd.png"> [8]
+
  
  
 #### - 모델 선택
 
-<img width="798" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [8]
+<img width="798" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [9]
 
 <br><br>
 ## IV. Evaluation & Analysis
@@ -143,7 +146,9 @@
 
 [7] [Object Detection] YOLO v5, v6 Loss - https://leedakyeong.tistory.com/m/entry/Object-Detection-YOLO-v5-v6-Loss
 
-[8] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
+[8][Object Detection] YOLO v1 ~ v6 비교(2) - https://leedakyeong.tistory.com/entry/Object-Detection-YOLO-v1v6-%EB%B9%84%EA%B5%902
+
+[9] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
 
 <br/><br/>
  *ref)*
