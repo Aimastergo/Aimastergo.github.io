@@ -106,9 +106,23 @@
 - Head
   - 생성된 feature maps에서 객체를 검출한다. [5]
   
- #### 2) Loss Function
+#### 2) Loss Function
+
+- YOLO의 Loss function은 3가지가 있다. Loss function들을 구한 뒤 각각 가중치를 곱해서 더한다.
+
+     <img width="255" alt="스크린샷 2022-11-29 오전 10 18 34" src="https://user-images.githubusercontent.com/117564613/204414780-ee2343ef-6378-4d87-9ee6-8eef2c2051ed.png"> [6]
+
+  - Classes Loss : Class를 잘 찾기 위한 Loss
+  - Objectness Loss : 해당 grid 안에 목표물이 있을 지에 대한 Loss
+  - Location Loss : (x,y,w,h)를 찾기 위한 Regression Loss
   
-<img width="798" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [6]
+- Classes Loss와 Objectness Loss는 Binary Cross Entropy + Sigmoid layer인 'torch.nn.BCEWithLogitsLoss()'를 사용한다. 이것은 모든 class의 합을 1로 만들어 가장 값이 높은 하나의 class가 결과로 나오는 것이 아니라 일정 임계점 이상이 되면 두 개 이상의 class도 결과가 될 수 있는 Loss이다. [7]
+- Location Loss는 CIoU Loss를 사용한다. CIoU는 
+ 
+ 
+#### - 모델 선택
+
+<img width="798" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [8]
 
 <br><br>
 ## IV. Evaluation & Analysis
@@ -125,7 +139,11 @@
 
 [5] Improving YOLOv5 with Attention Mechanism for Detecting Boulders from Planetary Images - https://www.mdpi.com/2072-4292/13/18/3776/htm
 
-[6] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
+[6] YOLOv5 Documentation- https://docs.ultralytics.com/tutorials/architecture-summary/
+
+[7] [Object Detection] YOLO v5, v6 Loss - https://leedakyeong.tistory.com/m/entry/Object-Detection-YOLO-v5-v6-Loss
+
+[8] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
 
 <br/><br/>
  *ref)*
