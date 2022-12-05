@@ -33,10 +33,10 @@
 
 ### 2.3 Datasets
 - label classess : 3
-- total : 1,800 (each label 300)
->- train : 900 (each label 300)
->- valid : 450 (each label 150)
->- test : 450 (each label 150)   
+- total : 1,285 (100% / each label 430)
+>- train : 900 (90% / each label 300)
+>- valid : 255 (20% / each label 85)
+>- test : 126 (10% / each label 42)   
 
 <br><br>
 ## 3. Methology
