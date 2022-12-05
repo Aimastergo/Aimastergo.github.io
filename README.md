@@ -5,21 +5,21 @@
 - 국내 표준 360ml 소주병 규격에 따른 소주병 분류 (형태, 색)
 <br/><br>
 
-## Members
+## 0. Members
 - **전인화** 경영학부 / 2017003290 / ai05024@hanyang.ac.kr
 - **백승주** 경영학부 / 2018027283 / baeksj55@hanyang.ac.kr
 <br/><br/>
 
-## I. Proposal
+## 1. Proposal
 - 기존 '360mL 초록색'의 소주병 공용 기준을 깬 상품(진로와 같은 투명 소주병)들이 잇따라 출시되면서 소주병 재사용을 위한 협약이 사실상 유명무실화되면서 환경에 악영향을 줄 것이라는 우려도 대두된다.
 - 기업의 공병 재사용 효율을 높이고, 환경보호에 도움이 되고자 360ml 소주병을 규격과 색에 따라 분리하는 모델을 만들고자 한다.
 <br/><br/>
 
-## II. Datasets
-### 1. 데이터 선정 및 수집
+## 2. Datasets
+### 2.1 데이터 선정 및 수집
 **1) 수집 데이터 선정** 
 - 360ml 소주병 병모양, 색 분류라는 주제에 부합하는 데이터 수집을 위해 수집할 360ml 소주병 종류를 분류
-- 소주병 국내 점유율 데이터에 기초하여 3가지 소주병으로 분류 (기존 초록색병 / 진로, 금복주 투명병 / 한라산 투명병)
+- 소주병 국내 점유율 데이터[0]에 기초하여 3가지 소주병으로 분류 (기존 초록색병 / 진로, 금복주 투명병 / 한라산 투명병)
 <br/><br/>
 
 **2) 데이터 수집 : 검색포털 이미지 크롤링**
@@ -27,11 +27,11 @@
 - 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 1,800여 개 수기 추출
 <img src="https://user-images.githubusercontent.com/117564613/204191315-013382c4-9ec4-48f3-9793-6bedc74a4431.jpg" width="400" height="250"/>
 
-### 2. 데이터 라벨링
+### 2.2 데이터 라벨링
 - **labelimg**를 사용하여 train, valid 데이터 라벨링
 <img src="https://user-images.githubusercontent.com/117564613/204189919-70d44b69-e315-45f5-aadb-688fa7ffb06b.jpg" width="400" height="250"/>
 
-### 3.Datasets
+### 2.3 Datasets
 - label classess : 3
 - total : 1,800 (each label 300)
 >- train : 900 (each label 300)
@@ -39,9 +39,9 @@
 >- test : 450 (each label 150)   
 
 <br><br>
-## III. Methology
+## 3. Methology
 
-### 1. YOLO(You Only Look Once)
+### 3.1 YOLO(You Only Look Once)
 
 - 기존의 객체 탐지(Object Detection) 방식들은 Region Proposal과 Classification이 순차적으로 이루어지며 객체 탐지를 수행하는 R-CNN 계열 2 Step 접근 방식 모델들이 주를 이루었다.(ex. R-CNN, Fast R-CNN, Faster R-CNN, Mask R-CNN 등)
 - 하지만 이러한 방식들은 처리 속도가 느리고, 최적화하기 힘들다는 단점이 있다.
@@ -84,7 +84,7 @@
 - 1x1과 3x3 convolutional layer를 사용하여 feature space를 축소시켰다.
 - 해상도를 위해 224x224 크기의 input 이미지를 2배하여 448x448로 변경하였다.
 
-### 2. YOLOv5
+### 3.2 YOLOv5
 - 지금까지 YOLO의 초기 버전인 YOLOv1을 간단히 살펴보았고, 이제는 우리가 적용할 기법인 YOLOv5에 대해 알아보고자 한다.
 - YOLOv5는 Pytorch 프레임워크 기반으로 구현된 버전으로 YOLOv4와 구조는 유사하나 CSP(Cross Stage Partial Network)를 사용함으로 계산 비용이 줄어들어 추론 시간이 YOLOv4보다 더욱 적게 소요되어 실시간 검출에 더 적합하다. [4]
 
@@ -131,10 +131,24 @@
 <img width="700" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [9]
 
 <br><br>
-## IV. Evaluation & Analysis
+## 4. Evaluation & Analysis
+
 
 <br><br>
-## V. Related Work
+## 5. Evaluation & Analysis
+### 5.1 기대효과
+- 최근 3년 사이 소주병 표준화 규격을 깬 사례들이 증가하면서, 기업들은 재활용 소주병에 예상하지 못한 비용을 지불하게 되었다.
+이번 360ml 소주병 분류 모델로 병 분류를 자동화하면서 인적 자원에 지출되는 비용을 예전수준으로 줄일 수 있을 것으로 기대한다.
+
+### 5.2 보완
+- 소주 상품의 용기가 병으로 제한되지 않으면서 비슷한 생김새의 종이팩, 페트병 소주 상품이 섞여 들어오는 경우가 많다.
+모델이 실제 현장에서 사용되기 위해서는 컨베이어 벨트 무게 센서 등 다양한 도구의 결합을 통해 분류 정확도를 보완할 필요가 있다.
+- 분류 범위를 소주병에서 맥주, 칵테일 등 주류 병으로 확대하여 모델을 구현한다면 정확도를 높임과 동시에 모델 활용도를 높일 수 있을 것이다.
+
+<br><br>
+## 6. Related Work
+[0] 국내 소주 판매순위 Top 10 - https://smoothmen.tistory.com/300
+
 [1] You Only Look Once: Unified, Real-Time Object Detection - https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
 
 [2] Yolo: You Only Look Once - https://infrequent-crime-dfa.notion.site/Yolo-You-Only-Look-Once-ee0370b7eec942bf8279dd54952e4efb
@@ -154,6 +168,8 @@
 [9] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
 
 <br/><br/>
- *ref)*
- *국내 소주 판매순위 Top 10 https://smoothmen.tistory.com/300*
-<br/><br/>
+## 7. Contribution
+#### 전 인화
+- YOLOv5 Modeling, Data Crawling, Data Analysis
+#### 백 승주
+- YOLOv5 Review, Dataset Preprocessing
