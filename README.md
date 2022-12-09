@@ -108,7 +108,7 @@
   
 #### 2) Loss Function
 
-- YOLOv5의 Loss function은 3가지가 있다. 3가지의 Loss function들을 구한 뒤 각각 가중치를 곱해서 더해 Loss값을 구한다.
+- YOLOv5의 Loss function은 3가지가 있다. 3가지의 Loss function들을 구한 뒤 각각 가중치를 곱하고 더해 Loss값을 구한다.
 
      <img width="360" alt="스크린샷 2022-11-29 오전 10 18 34" src="https://user-images.githubusercontent.com/117564613/204414780-ee2343ef-6378-4d87-9ee6-8eef2c2051ed.png"> [6]
 
