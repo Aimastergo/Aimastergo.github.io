@@ -72,7 +72,7 @@
 - 논문에서는 S=7, B=2, C=20이므로, 7 x 7 x (2 x 5 + 20)개의 예측 tensor가 나온다.
 <img width="572" alt="스크린샷 2022-11-29 오전 2 52 14" src="https://user-images.githubusercontent.com/117564613/204347202-e20bd6ba-3f32-452f-a84e-b7451c4662ff.png"> [1]
 
-- 인코딩 된 결과는 다음과 같다.
+- 인코딩 된 결과를 시각화해보면 다음과 같다.
 
   ![1*YG6heD55fEmZeUKRSlsqlA](https://user-images.githubusercontent.com/117564613/204378112-174995a5-dbea-4aff-8cf2-a1471965fc8e.png) [3]
 
