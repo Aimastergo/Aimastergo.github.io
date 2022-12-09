@@ -97,7 +97,7 @@
   - Backbone network는 multiple convolution과 pooling을 통해 입력 이미지에서 다양한 크기의 feature map을 추출하는 convolutional neural network이다.
   - CSP는 계산 속도를 줄이고 추론 프로세스의 속도를 높인다.
   - SPP는 서로 다른 커널 크기로 max pooling을 수행하고 이들을 서로 연결하여 기능을 융합하는 spatial pyramid pooling module이다. [5]
-  - YOLOv5의 backbone은 YOLOv5n6, YOLOv5s6, YOLOv5m6, YOLOv5l6, YOLOv5x6 이렇게 총 6종류로 구성되어 있다.
+  - YOLOv5의 backbone은 YOLOv5n6, YOLOv5s6, YOLOv5m6, YOLOv5l6, YOLOv5x6 이렇게 총 5종류로 구성되어 있다.
 - Neck
   - FPN과 PAN의 feature pyramid structure가 사용된다.
   - FPN structure는 top feature maps에서 lower feature map으로 강력한 semantic features을 전달한다.
