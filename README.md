@@ -63,7 +63,7 @@
 
    <img width="180" alt="스크린샷 2022-11-29 오전 4 19 54" src="https://user-images.githubusercontent.com/117564613/204362614-6539818f-bde5-4fba-98fc-218dbb487ecf.png"> [1]
 >- Pr(Object) : 해당 grid에 물체가 있을 확률.(존재하면 1, 존재하지 않으면 0)
->- IOU : 예측한 박스 /  Ground Truth 박스와의 겹치는 영역을 비율로 나타내는 IOU를 곱해서 계산
+>- IOU : 예측한 박스 /  Ground Truth 박스와의 겹치는 영역
 - 각각의 Grid cell에 대해 conditional class probabilities를 계산한다.
 
   <img width="155" alt="스크린샷 2022-11-29 오전 5 00 33" src="https://user-images.githubusercontent.com/117564613/204369708-93137915-7e53-47a0-9bf2-1d12fe517072.png"> [1]
