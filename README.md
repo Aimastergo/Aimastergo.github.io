@@ -127,7 +127,7 @@
 
 - 소주병 분류 모델은 실시간으로 소주병을 빠르게 탐지해야 한다. 위에서 확인하였듯이 YOLOv5는 다양한 종류의 모델이 있다. 
 - 밑의 표는 객체 탐지 모델인 YOLOv5와 EfficientDet의 성능을 비교 분석한 그래프인데, 거의 모든 YOLOv5 모델이 EfficeientDet의 성능과 비슷하거나 압도하는 것을 볼 수 있다.
-- 따라서 우리는 적당한 에 FPS(Frame Per Second)가 가장 높은 모델인 YOLOv5s를 사용하기로 결정했다.
+- 컨베이어 벨트 위에서 소주병들이 실시간으로 분리되어야 하는 현장 상황을 고려했을 때, FPS(Frame Per Second)가 가장 높은 모델인 YOLOv5s를 사용하기로 결정했다.
 
 <img width="700" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [9]
 
@@ -162,7 +162,7 @@ Epochs별 Accuracy, Loss값 확인
 
 [3] Review: YOLOv1 — You Only Look Once (Object Detection) - https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
 
-[5] Improving YOLOv5 with Attention Mechanism for Detecting Boulders from Planetary Images - https://www.mdpi.com/2072-4292/13/18/3776/htm
+[4] Improving YOLOv5 with Attention Mechanism for Detecting Boulders from Planetary Images - https://www.mdpi.com/2072-4292/13/18/3776/htm
 
 [6] YOLOv5 Documentation- https://docs.ultralytics.com/tutorials/architecture-summary/
 
