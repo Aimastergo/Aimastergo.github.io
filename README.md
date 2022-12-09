@@ -87,24 +87,24 @@
 
 ### 3.2 YOLOv5
 - 지금까지 YOLO의 초기 버전인 YOLOv1을 간단히 살펴보았고, 이제는 우리가 적용할 기법인 YOLOv5에 대해 알아보고자 한다.
-- YOLOv5는 YOLO의 5번째 버전으로, Pytorch 프레임워크 기반으로 구현되었다. YOLOv4와 구조는 유사하나, 추론 시간이 더욱 적게 소요되어 실시간 검출에 더 적합하다. [4]
+- YOLOv5는 YOLO의 5번째 버전으로, Pytorch 프레임워크 기반으로 구현되었다. YOLOv4와 구조는 유사하나, 추론 시간이 더욱 적게 소요되어 실시간 검출에 더 적합하다.
 
 #### 1) Network Design
-<img width="671" alt="스크린샷 2022-11-29 오전 7 22 48" src="https://user-images.githubusercontent.com/117564613/204393468-20550c40-1944-4f39-a41e-502e70ca65a0.png"> [5]
+<img width="671" alt="스크린샷 2022-11-29 오전 7 22 48" src="https://user-images.githubusercontent.com/117564613/204393468-20550c40-1944-4f39-a41e-502e70ca65a0.png"> [4]
 
 - YOLOv5의 Network Design은 Backbone, neck, Head 이렇게 세 가지 주요 파트로 이루어져 있다.
 - Backbone
   - Backbone network는 multiple convolution과 pooling을 통해 입력 이미지에서 다양한 크기의 feature map을 추출하는 convolutional neural network이다.
   - CSP(Cross-Stage-Partial Network)는 계산 속도를 줄이고 추론 프로세스의 속도를 높이는 기법이다.
-  - SPP(Spatial Pyramid Pooling)는 fixed-size input image 필요없이, 서로 다른 커널 크기로 max pooling을 수행하고 이들을 서로 연결하여 기능을 융합하는 pooling module이다. [5]
+  - SPP(Spatial Pyramid Pooling)는 fixed-size input image 필요없이, 서로 다른 커널 크기로 max pooling을 수행하고 이들을 서로 연결하여 기능을 융합하는 pooling module이다. [4]
   - YOLOv5의 backbone은 YOLOv5n6, YOLOv5s6, YOLOv5m6, YOLOv5l6, YOLOv5x6 이렇게 총 5종류로 구성되어 있다.
 - Neck
   - FPN(Feature Pyramid Network)과 PAN(Path Aggregation Network) structure가 사용된다.
   - FPN structure는 top feature maps에서 lower feature map으로 강력한 semantic features을 전달한다.
   - 동시에 PAN structure는 lower feature map에서 higher feature map으로 강력한 지역화 feature를 전달한다.
-  - 두 structure는 공동으로 Neck network의 feature fusion capability를 강화한다. [5]
+  - 두 structure는 공동으로 Neck network의 feature fusion capability를 강화한다. [4]
 - Head
-  - 생성된 feature maps에서 객체를 검출한다. [5]
+  - 생성된 feature maps에서 객체를 검출한다. [4]
   
 #### 2) Loss Function
 
@@ -161,8 +161,6 @@ Epochs별 Accuracy, Loss값 확인
 [2] Yolo: You Only Look Once - https://infrequent-crime-dfa.notion.site/Yolo-You-Only-Look-Once-ee0370b7eec942bf8279dd54952e4efb
 
 [3] Review: YOLOv1 — You Only Look Once (Object Detection) - https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
-
-[4] YOLOv5를 이용한 해양 침적쓰레기 검출 A.I 모델에 대한 연구 - 왕태수(동의대학교)
 
 [5] Improving YOLOv5 with Attention Mechanism for Detecting Boulders from Planetary Images - https://www.mdpi.com/2072-4292/13/18/3776/htm
 
