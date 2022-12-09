@@ -74,7 +74,7 @@
 
 - 인코딩 된 결과를 시각화해보면 다음과 같다.
 
-  ![1*YG6heD55fEmZeUKRSlsqlA](https://user-images.githubusercontent.com/117564613/204378112-174995a5-dbea-4aff-8cf2-a1471965fc8e.png) [3]
+  ![1*YG6heD55fEmZeUKRSlsqlA](https://user-images.githubusercontent.com/117564613/204378112-174995a5-dbea-4aff-8cf2-a1471965fc8e.png) [2]
 
 
 #### 2) Network Design
@@ -90,36 +90,36 @@
 - YOLOv5는 YOLO의 5번째 버전으로, Pytorch 프레임워크 기반으로 구현되었다. YOLOv4와 구조는 유사하나, 추론 시간이 더욱 적게 소요되어 실시간 검출에 더 적합하다.
 
 #### 1) Network Design
-<img width="671" alt="스크린샷 2022-11-29 오전 7 22 48" src="https://user-images.githubusercontent.com/117564613/204393468-20550c40-1944-4f39-a41e-502e70ca65a0.png"> [4]
+<img width="671" alt="스크린샷 2022-11-29 오전 7 22 48" src="https://user-images.githubusercontent.com/117564613/204393468-20550c40-1944-4f39-a41e-502e70ca65a0.png"> [3]
 
 - YOLOv5의 Network Design은 Backbone, neck, Head 이렇게 세 가지 주요 파트로 이루어져 있다.
 - Backbone
   - Backbone network는 multiple convolution과 pooling을 통해 입력 이미지에서 다양한 크기의 feature map을 추출하는 convolutional neural network이다.
   - CSP(Cross-Stage-Partial Network)는 계산 속도를 줄이고 추론 프로세스의 속도를 높이는 기법이다.
-  - SPP(Spatial Pyramid Pooling)는 fixed-size input image 필요없이, 서로 다른 커널 크기로 max pooling을 수행하고 이들을 서로 연결하여 기능을 융합하는 pooling module이다. [4]
+  - SPP(Spatial Pyramid Pooling)는 fixed-size input image 필요없이, 서로 다른 커널 크기로 max pooling을 수행하고 이들을 서로 연결하여 기능을 융합하는 pooling module이다. [3]
   - YOLOv5의 backbone은 YOLOv5n6, YOLOv5s6, YOLOv5m6, YOLOv5l6, YOLOv5x6 이렇게 총 5종류로 구성되어 있다.
 - Neck
   - FPN(Feature Pyramid Network)과 PAN(Path Aggregation Network) structure가 사용된다.
   - FPN structure는 top feature maps에서 lower feature map으로 강력한 semantic features을 전달한다.
   - 동시에 PAN structure는 lower feature map에서 higher feature map으로 강력한 지역화 feature를 전달한다.
-  - 두 structure는 공동으로 Neck network의 feature fusion capability를 강화한다. [4]
+  - 두 structure는 공동으로 Neck network의 feature fusion capability를 강화한다. [3]
 - Head
-  - 생성된 feature maps에서 객체를 검출한다. [4]
+  - 생성된 feature maps에서 객체를 검출한다. [3]
   
 #### 2) Loss Function
 
 - YOLOv5의 Loss function은 3가지가 있다. 3가지의 Loss function들을 각각 가중치를 곱하고 더해 Loss값을 구한다.
 
-     <img width="360" alt="스크린샷 2022-11-29 오전 10 18 34" src="https://user-images.githubusercontent.com/117564613/204414780-ee2343ef-6378-4d87-9ee6-8eef2c2051ed.png"> [6]
+     <img width="360" alt="스크린샷 2022-11-29 오전 10 18 34" src="https://user-images.githubusercontent.com/117564613/204414780-ee2343ef-6378-4d87-9ee6-8eef2c2051ed.png"> [4]
 
   - Classes Loss : Class를 잘 찾기 위한 Loss
   - Objectness Loss : 해당 grid 안에 목표물이 있을 지에 대한 Loss
   - Location Loss : (x,y,w,h)를 찾기 위한 Regression Loss
   
-- Classes Loss와 Objectness Loss는 Binary Cross Entropy + Sigmoid layer인 'torch.nn.BCEWithLogitsLoss()'를 사용한다. 이것은 모든 class의 합을 1로 만들어 가장 값이 높은 하나의 class가 결과로 나오는 것이 아니라 일정 임계점 이상이 되면 두 개 이상의 class도 결과가 될 수 있는 Loss function이다. [7]
-- Location Loss는  IoU 기반인 CIoU Loss를 사용한다. CIoU는 area of overap과 central point distance, 그리고 종횡비(aspect ratio)를 고려한 Loss function이다. [8]
+- Classes Loss와 Objectness Loss는 Binary Cross Entropy + Sigmoid layer인 'torch.nn.BCEWithLogitsLoss()'를 사용한다. 이것은 모든 class의 합을 1로 만들어 가장 값이 높은 하나의 class가 결과로 나오는 것이 아니라 일정 임계점 이상이 되면 두 개 이상의 class도 결과가 될 수 있는 Loss function이다. [5]
+- Location Loss는  IoU 기반인 CIoU Loss를 사용한다. CIoU는 area of overap과 central point distance, 그리고 종횡비(aspect ratio)를 고려한 Loss function이다. [6]
 
-  <img width="627" alt="스크린샷 2022-11-29 오전 10 53 58" src="https://user-images.githubusercontent.com/117564613/204419108-0fba6f61-38b4-4b61-9fe1-91a9412b50dd.png"> [8]
+  <img width="627" alt="스크린샷 2022-11-29 오전 10 53 58" src="https://user-images.githubusercontent.com/117564613/204419108-0fba6f61-38b4-4b61-9fe1-91a9412b50dd.png"> [6]
 
  
  
@@ -129,7 +129,7 @@
 - 밑의 표는 객체 탐지 모델인 YOLOv5와 EfficientDet의 성능을 비교 분석한 그래프인데, 거의 모든 YOLOv5 모델이 EfficeientDet의 성능과 비슷하거나 압도하는 것을 볼 수 있다.
 - 컨베이어 벨트 위에서 소주병들이 실시간으로 분리되어야 하는 현장 상황을 고려했을 때, FPS(Frame Per Second)가 가장 높은 모델인 YOLOv5s를 사용하기로 결정했다.
 
-<img width="700" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [9]
+<img width="700" alt="스크린샷 2022-11-29 오전 6 21 48" src="https://user-images.githubusercontent.com/117564613/204383621-8118178f-cfb3-45d4-9dde-c7c8605e161a.png"> [7]
 
 <br><br>
 ## 4. Evaluation & Analysis
@@ -158,19 +158,17 @@ Epochs별 Accuracy, Loss값 확인
 
 [1] You Only Look Once: Unified, Real-Time Object Detection - https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
 
-[2] Yolo: You Only Look Once - https://infrequent-crime-dfa.notion.site/Yolo-You-Only-Look-Once-ee0370b7eec942bf8279dd54952e4efb
+[2] Review: YOLOv1 — You Only Look Once (Object Detection) - https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
 
-[3] Review: YOLOv1 — You Only Look Once (Object Detection) - https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
+[3] Improving YOLOv5 with Attention Mechanism for Detecting Boulders from Planetary Images - https://www.mdpi.com/2072-4292/13/18/3776/htm
 
-[4] Improving YOLOv5 with Attention Mechanism for Detecting Boulders from Planetary Images - https://www.mdpi.com/2072-4292/13/18/3776/htm
+[4] YOLOv5 Documentation- https://docs.ultralytics.com/tutorials/architecture-summary/
 
-[6] YOLOv5 Documentation- https://docs.ultralytics.com/tutorials/architecture-summary/
+[5] [Object Detection] YOLO v5, v6 Loss - https://leedakyeong.tistory.com/m/entry/Object-Detection-YOLO-v5-v6-Loss
 
-[7] [Object Detection] YOLO v5, v6 Loss - https://leedakyeong.tistory.com/m/entry/Object-Detection-YOLO-v5-v6-Loss
+[6][Object Detection] YOLO v1 ~ v6 비교(2) - https://leedakyeong.tistory.com/entry/Object-Detection-YOLO-v1v6-%EB%B9%84%EA%B5%902
 
-[8][Object Detection] YOLO v1 ~ v6 비교(2) - https://leedakyeong.tistory.com/entry/Object-Detection-YOLO-v1v6-%EB%B9%84%EA%B5%902
-
-[9] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
+[7] ultralytics/yolov5 - https://github.com/ultralytics/yolov5
 
 <br/><br/>
 ## 7. Contribution
