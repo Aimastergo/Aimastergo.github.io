@@ -54,7 +54,7 @@
 
 #### 1) Unified Detection
 - 입력 이미지를 S x S grid로 나눠준다.
-- Grid cell은 B bounding boxes 와 confidence score를 예측한다.
+- Grid cell에 대해 B bounding boxes 와 confidence score를 예측한다.
 - bounding box는 (x, y, w, h, c)로 구성되어 있다
  >- (x,y) : boundging box의 중심점 좌표
  >- w,h : 넓이와 높이
