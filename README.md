@@ -80,7 +80,7 @@
 #### 2) Network Design
 <img width="800" alt="스크린샷 2022-11-29 오전 2 52 32" src="https://user-images.githubusercontent.com/117564613/204372953-c6181b60-3ba4-4844-9049-d74a48c829bf.png"> [1]
 
-- YOLOv1의 네트워크 구조에는 총 24개의 convolutional layers(이미지로부터 특징 추출)와, 2개의 fully connected layers(클래스 확률 & bounding box의 좌표 예측)가 .
+- YOLOv1의 네트워크 구조에는 총 24개의 convolutional layers(이미지로부터 특징 추출)와, 2개의 fully connected layers(클래스 확률 & bounding box의 좌표 예측)가 있다.
 - convolutional layer 20개는 ImageNet 1000-class competition dataset을 사용하여 convolutional layers를 pre-train 시켰다.
 - 1x1과 3x3 convolutional layer를 사용하여 feature space를 축소시켰다.
 - 해상도를 위해 224x224 크기의 input 이미지를 2배하여 448x448로 변경하였다.
