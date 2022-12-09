@@ -177,6 +177,6 @@ Epochs별 Accuracy, Loss값 확인
 <br/><br/>
 ## 7. Contribution
 #### 전 인화
-- YOLOv5 Modeling, Data Crawling, Data Analysis
+- YOLOv5 Modeling, Data Crawling, Data Analysis, YouTube recording
 #### 백 승주
-- YOLOv5 Review, Dataset Preprocessing
+- YOLOv5 Review, Dataset Preprocessing, YouTube recording
