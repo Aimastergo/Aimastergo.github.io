@@ -87,7 +87,7 @@
 
 ### 3.2 YOLOv5
 - 지금까지 YOLO의 초기 버전인 YOLOv1을 간단히 살펴보았고, 이제는 우리가 적용할 기법인 YOLOv5에 대해 알아보고자 한다.
-- YOLOv5는 Pytorch 프레임워크 기반으로 구현된 버전으로 YOLOv4와 구조는 유사하나 CSP(Cross Stage Partial Network)를 사용함으로 계산 비용이 줄어들어 추론 시간이 YOLOv4보다 더욱 적게 소요되어 실시간 검출에 더 적합하다. [4]
+- YOLOv5는 YOLO의 5번째 버전으로, Pytorch 프레임워크 기반으로 구현되었다. YOLOv4와 구조는 유사하나, 추론 시간이 더욱 적게 소요되어 실시간 검출에 더 적합하다. [4]
 
 #### 1) Network Design
 <img width="671" alt="스크린샷 2022-11-29 오전 7 22 48" src="https://user-images.githubusercontent.com/117564613/204393468-20550c40-1944-4f39-a41e-502e70ca65a0.png"> [5]
