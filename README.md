@@ -133,13 +133,14 @@
 
 <br><br>
 ## 4. Evaluation & Analysis
-#### 4.1. 학습 결과 (train result)
-1) 동영상
-2) 웹캠
-
-#### 4.2. 분류기 사용결과 (동영상, 실시간 웹캠)
+#### 4.1. 분류기 사용결과 (동영상, 실시간 웹캠)
+<img src="https://user-images.githubusercontent.com/117564613/204191315-013382c4-9ec4-48f3-9793-6bedc74a4431.jpg" width="400" height="250"/>
 훈련 그래프 사진 첨부
 Epochs별 Accuracy, Loss값 확인
+
+#### 4.2. 학습 결과 (train result)
+1) 동영상
+2) 웹캠
 
 <br><br>
 ## 5. Evaluation & Analysis
