@@ -134,18 +134,23 @@
 <br><br>
 ## 4. Evaluation & Analysis
 #### 4.1. 학습 결과 (train result)
-- training 소요 시간 : 8.930 hours
-- 28 Epochs 훈련 결과
+- **training 소요 시간** : 8.930 hours
+- **28 Epochs 훈련 결과**
 <img src="https://user-images.githubusercontent.com/117564613/206830895-f2c1bb33-d4eb-4227-b373-eccc23b64110.png">
-<img src="https://user-images.githubusercontent.com/117564613/206831291-97a867e3-5071-49c5-8108-018793470e7a.png">
+<img src="https://user-images.githubusercontent.com/117564613/206831406-7337cc5a-a441-4ade-8c4a-b59881884469.png">
 <br><br>
 
-- validation 실제값과 예측값 비교
+- **validation 실제값과 예측값 비교**
 <img src="https://user-images.githubusercontent.com/117564613/206831253-88f738dd-4ebb-481d-b897-5affef39e527.png">
 
-#### 4.2. 
-1) 동영상
-2) 웹캠
+#### 4.2. 소주병 분류기 실행 결과
+1) 사진
+- 컨베이어 벨트 위에서 소주병들이 분류된다고 가정한 편집 사진으로 실행
+<img src="https://user-images.githubusercontent.com/117564613/206834170-4f32f881-512b-4969-bc4e-2c9d292c5391.png">
+<img src="https://user-images.githubusercontent.com/117564613/206832918-3f84ca20-793a-4b29-9275-64d426154314.png">
+
+2) 동영상
+3) 웹캠
 
 <br><br>
 ## 5. Evaluation & Analysis
