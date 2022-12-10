@@ -137,11 +137,11 @@
 - **training 소요 시간** : 8.930 hours
 - **28 Epochs 훈련 결과**
 <img src="https://user-images.githubusercontent.com/117564613/206830895-f2c1bb33-d4eb-4227-b373-eccc23b64110.png">
-<img src="https://user-images.githubusercontent.com/117564613/206831406-7337cc5a-a441-4ade-8c4a-b59881884469.png">
+<img src="https://user-images.githubusercontent.com/117564613/206834961-e2dffb49-8e26-4f9d-a31c-684581946a34.png">
 <br><br>
 
 - **validation 실제값과 예측값 비교**
-<img src="https://user-images.githubusercontent.com/117564613/206831253-88f738dd-4ebb-481d-b897-5affef39e527.png">
+<img src="https://user-images.githubusercontent.com/117564613/206831406-7337cc5a-a441-4ade-8c4a-b59881884469.png">
 
 #### 4.2. 소주병 분류기 실행 결과
 1) 사진
