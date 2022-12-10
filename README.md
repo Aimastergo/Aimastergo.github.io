@@ -146,8 +146,8 @@
 ### 4.2. 소주병 분류기 실행 결과
 #### 1) 사진
 - 컨베이어 벨트 위에서 소주병들이 분류된다고 가정한 편집 사진으로 실행
-<img width="627" src="https://user-images.githubusercontent.com/117564613/206834170-4f32f881-512b-4969-bc4e-2c9d292c5391.png">
-<img width="627" src="https://user-images.githubusercontent.com/117564613/206832918-3f84ca20-793a-4b29-9275-64d426154314.png">
+<img width="800" src="https://user-images.githubusercontent.com/117564613/206834170-4f32f881-512b-4969-bc4e-2c9d292c5391.png">
+<img width="800" src="https://user-images.githubusercontent.com/117564613/206832918-3f84ca20-793a-4b29-9275-64d426154314.png">
 
 #### 2) 실시간 영상
 - 웹캠을 통해 실시간 소주병 분류
