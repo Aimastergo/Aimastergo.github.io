@@ -133,12 +133,17 @@
 
 <br><br>
 ## 4. Evaluation & Analysis
-#### 4.1. 분류기 사용결과 (동영상, 실시간 웹캠)
-<img src="https://user-images.githubusercontent.com/117564613/204191315-013382c4-9ec4-48f3-9793-6bedc74a4431.jpg" width="400" height="250"/>
-훈련 그래프 사진 첨부
-Epochs별 Accuracy, Loss값 확인
+#### 4.1. 학습 결과 (train result)
+- training 소요 시간 : 8.930 hours
+- 28 Epochs 훈련 결과
+<img src="https://user-images.githubusercontent.com/117564613/206830895-f2c1bb33-d4eb-4227-b373-eccc23b64110.png">
+<img src="https://user-images.githubusercontent.com/117564613/206831291-97a867e3-5071-49c5-8108-018793470e7a.png">
+<br><br>
 
-#### 4.2. 학습 결과 (train result)
+- validation 실제값과 예측값 비교
+<img src="https://user-images.githubusercontent.com/117564613/206831253-88f738dd-4ebb-481d-b897-5affef39e527.png">
+
+#### 4.2. 
 1) 동영상
 2) 웹캠
 
