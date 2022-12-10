@@ -153,8 +153,7 @@
 - 웹캠을 통해 실시간 소주병 분류
 <br><br>
 [![Video Label](http://img.youtube.com/vi/iJJL30N7cS4/0.jpg)](https://youtu.be/iJJL30N7cS4)
-<br><br>
-https://youtu.be/iJJL30N7cS4
+https://youtu.be/iJJL30N7cS4 (링크나 이미지 클릭을 통해 영상 시청 가능)
 <br><br>
 
 - 초록병(g0)의 경우, 상하좌우 다양한 각도에서 비교적 높은 정확도를 보였다
