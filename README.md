@@ -151,7 +151,14 @@
 
 #### 2) 실시간 영상
 - 웹캠을 통해 실시간 소주병 분류
+<br><br>
+[![Video Label](http://img.youtube.com/vi/iJJL30N7cS4/0.jpg)](https://youtu.be/iJJL30N7cS4)
+<br><br>
 https://youtu.be/iJJL30N7cS4
+<br><br>
+
+- 초록병(g0)의 경우, 상하좌우 다양한 각도에서 비교적 높은 정확도를 보였다
+- 투명병(w0,w1)의 경우, 어두운 곳이나 다른 색의 배경에 두면 정확도가 떨어졌다. 병의 색이 투명해서 주변 환경의 영향을 많이 받았다.
 
 <br><br>
 ## 5. Evaluation & Analysis
