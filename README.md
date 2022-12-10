@@ -133,7 +133,7 @@
 
 <br><br>
 ## 4. Evaluation & Analysis
-#### 4.1. 학습 결과 (train result)
+### 4.1. 학습 결과 (train result)
 - **training 소요 시간** : 8.930 hours
 - **28 Epochs 훈련 결과**
 <img src="https://user-images.githubusercontent.com/117564613/206830895-f2c1bb33-d4eb-4227-b373-eccc23b64110.png">
@@ -143,14 +143,15 @@
 - **validation 실제값과 예측값 비교**
 <img src="https://user-images.githubusercontent.com/117564613/206831406-7337cc5a-a441-4ade-8c4a-b59881884469.png">
 
-#### 4.2. 소주병 분류기 실행 결과
-1) 사진
+### 4.2. 소주병 분류기 실행 결과
+#### 1) 사진
 - 컨베이어 벨트 위에서 소주병들이 분류된다고 가정한 편집 사진으로 실행
 <img src="https://user-images.githubusercontent.com/117564613/206834170-4f32f881-512b-4969-bc4e-2c9d292c5391.png">
 <img src="https://user-images.githubusercontent.com/117564613/206832918-3f84ca20-793a-4b29-9275-64d426154314.png">
 
-2) 동영상
-3) 웹캠
+#### 2) 실시간 영상
+- 웹캠을 통해 실시간 소주병 분류
+https://youtu.be/iJJL30N7cS4
 
 <br><br>
 ## 5. Evaluation & Analysis
