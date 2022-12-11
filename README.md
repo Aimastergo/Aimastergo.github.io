@@ -153,6 +153,7 @@
 - 웹캠을 통해 실시간 소주병 분류
 <br><br>
 [![Video Label](http://img.youtube.com/vi/iJJL30N7cS4/0.jpg)](https://youtu.be/iJJL30N7cS4)
+
 https://youtu.be/iJJL30N7cS4 (링크나 이미지 클릭을 통해 영상 시청 가능)
 <br><br>
 
