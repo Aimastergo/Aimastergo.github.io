@@ -23,7 +23,7 @@
 <br/><br/>
 
 **2) 데이터 수집 : 검색포털 이미지 크롤링**
-- 네이버, 구글, bing 3개 검색포털로 부터 이미지 크롤링 * *crawling_n.py 파일 참조*
+- 3개의 검색포털에서 이미지 크롤링 * *crawling_n.py 파일 참조*
 - 추출한 이미지 3,600여 개 중, 사용 가능한 이미지 1,800여 개 수기 추출
 <img src="https://user-images.githubusercontent.com/117564613/204191315-013382c4-9ec4-48f3-9793-6bedc74a4431.jpg" width="400" height="250"/>
 
