@@ -1,6 +1,6 @@
 # AI+X:DeepLearning Final Project<br/>
 <br><br>
-[![Video Label](http://img.youtube.com/vi/RCAMZ5aG-2Y/0.jpg)](https://www.youtube.com/watch?v=RCAMZ5aG-2Y)https://www.youtube.com/watch?v=RCAMZ5aG-2Y
+[![Video Label](http://img.youtube.com/vi/NpJd5VtOQ-k/0.jpg)](https://www.youtube.com/watch?v=NpJd5VtOQ-k)https://www.youtube.com/watch?v=NpJd5VtOQ-k
 <br><br>
 ## Title
 - 국내 표준 360ml 소주병 규격에 따른 소주병 분류 (형태, 색)
