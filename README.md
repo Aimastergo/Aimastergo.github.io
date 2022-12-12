@@ -153,7 +153,8 @@ names: ['w0','w1','g0']
 cd C:\Users\JIH\yolov5
 python train.py --data "C:\Users\JIH\yolov5\content\sojubottle\data.yaml" --epochs 28 --batch 20 --weights yolov5s.pt
 ```
-<img width="500" src="https://user-images.githubusercontent.com/117564613/207020087-c282eded-7715-43cb-b029-948037b16fc9.png">
+[run train]
+<img width="700" src="https://user-images.githubusercontent.com/117564613/207020087-c282eded-7715-43cb-b029-948037b16fc9.png">
 <br><br>
 
 ### 4.2. 학습 결과 (train result)
