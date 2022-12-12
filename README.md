@@ -141,17 +141,17 @@
 ### 4.1. 학습 (train)
 [data.yaml]
 ```
-train: \Users\JIH\yolov5\content\sojubottle\train
-val: \Users\JIH\yolov5\content\sojubottle\val
-test: \Users\JIH\yolov5\content\sojubottle\test
+train: \Users\---\yolov5\content\sojubottle\train
+val: \Users\---\yolov5\content\sojubottle\val
+test: \Users\---\yolov5\content\sojubottle\test
 
 nc: 3
 names: ['w0','w1','g0']
 ```
 [train]
 ```
-cd C:\Users\JIH\yolov5
-python train.py --data "C:\Users\JIH\yolov5\content\sojubottle\data.yaml" --epochs 28 --batch 20 --weights yolov5s.pt
+cd C:\Users\---\yolov5
+python train.py --data "C:\Users\---\yolov5\content\sojubottle\data.yaml" --epochs 28 --batch 20 --weights yolov5s.pt
 ```
 [run train] <br><br>
 <img width="700" src="https://user-images.githubusercontent.com/117564613/207020087-c282eded-7715-43cb-b029-948037b16fc9.png">
