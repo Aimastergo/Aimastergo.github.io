@@ -138,7 +138,25 @@
 
 <br><br>
 ## 4. Evaluation & Analysis
-### 4.1. 학습 결과 (train result)
+### 4.1. 학습 (train)
+[data.yaml]
+'''
+train: \Users\JIH\yolov5\content\sojubottle\train
+val: \Users\JIH\yolov5\content\sojubottle\val
+test: \Users\JIH\yolov5\content\sojubottle\test
+
+nc: 3
+names: ['w0','w1','g0']
+'''
+[train]
+'''
+cd C:\Users\JIH\yolov5
+python train.py --data "C:\Users\JIH\yolov5\content\sojubottle\data.yaml" --epochs 28 --batch 20 --weights yolov5s.pt
+'''
+<img width="800" src="https://user-images.githubusercontent.com/117564613/207020087-c282eded-7715-43cb-b029-948037b16fc9.png">
+<br><br>
+
+### 4.2. 학습 결과 (train result)
 - **training 소요 시간** : 8.930 hours
 - **28 Epochs 훈련 결과**
 <img src="https://user-images.githubusercontent.com/117564613/206830895-f2c1bb33-d4eb-4227-b373-eccc23b64110.png">
@@ -148,7 +166,7 @@
 - **validation 실제값과 예측값 비교**
 <img src="https://user-images.githubusercontent.com/117564613/206831406-7337cc5a-a441-4ade-8c4a-b59881884469.png">
 
-### 4.2. 소주병 분류기 실행 결과
+### 4.3. 소주병 분류기 실행 결과
 #### 1) 사진
 - 컨베이어 벨트 위에서 소주병들이 분류된다고 가정한 편집 사진으로 실행
 <img width="990" src="https://user-images.githubusercontent.com/117564613/206834170-4f32f881-512b-4969-bc4e-2c9d292c5391.png">
